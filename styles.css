@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #888;
+}
+
+.container {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#title {
+    margin-bottom: 20px;
+    color: azure;
+}
+
+.vis-container {
+    position: relative; /* Necessario per posizionare il tooltip */
+}
+
+#chart {
+    background-color: #333;
+    border: 1px solid #000;
+}
+.domain {
+    stroke: #ffffff;
+}
+.tick text {
+    fill: #ffffff;
+}
+.tick line {
+    stroke: #9f9f9f;
+}
+
+.dot {
+    fill: #00ff00;
+}
+
+.dot.doping {
+    fill: orangered;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#tooltip.show {
+    opacity: 0.9;
+    left: 500px;
+    top: 0px;
+}
+
+#legend {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.legend-item {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.legend-item.doping {
+    background-color: orangered;
+    color: white;
+}
+
+.legend-item.no-doping {
+
+    background-color: #00ff00;
+    color: white;
+}

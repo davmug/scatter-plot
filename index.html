@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cyclist Data View</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Scatterplot of Cyclist Performance</h1>
+      <div class="vis-container">
+        <svg id="chart"></svg>
+        <div id="tooltip"></div>
+        <div id="legend">
+          <p>Legend: <span class="legend-item doping">Cyclists with doping</span> <span class="legend-item no-doping">Cyclists without doping</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
